@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 from pyrogram import Client, Filters, InlineKeyboardMarkup, InlineKeyboardButton
 from bot import user_time
-from yt_dlp import YoutubeDL
+from config import youtube_next_fetch
 from helper.ytdlfunc import extractYt, create_buttons
 import wget
 import os
@@ -55,4 +55,3 @@ async def ytdl(_, message):
         except Exception as e:
             await sentm.edit(
             f"<code>{e}</code> #Error")
-
