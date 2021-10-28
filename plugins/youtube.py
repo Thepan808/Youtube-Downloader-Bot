@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 from pyrogram import Client, Filters, InlineKeyboardMarkup, InlineKeyboardButton
 from bot import user_time
-from config import youtube_next_fetch
+from config import yt_dlp
 from helper.ytdlfunc import extractYt, create_buttons
 import wget
 import os
