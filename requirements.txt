@@ -1,6 +1,6 @@
 
 TgCrypto
-git+https://github.com/pyrogram/pyrogram@master
+https://raw.githubusercontent.com/HasibulKabir/pyrogramarchive/master/pyrogramasyncv0.18.0.zip
 git+https://github.com/yt-dlp/yt-dlp@master
 wget
 pillow
