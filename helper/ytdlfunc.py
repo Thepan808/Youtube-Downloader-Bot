@@ -1,6 +1,6 @@
 from __future__ import unicode_literals
 from pyrogram import Client, Filters, StopPropagation, InlineKeyboardButton, InlineKeyboardMarkup
-import yt_dlp
+import youtube_dl
 from utils.util import humanbytes
 import asyncio
 
@@ -21,7 +21,7 @@ def create_buttons(quailitylist):
 
 # extract Youtube info
 def extractYt(yturl):
-    ydl = yt_dlp.YoutubeDL()
+    ydl = youtube_dl.YoutubeDL()
     with ydl:
         qualityList = []
         r = ydl.extract_info(yturl, download=False)
@@ -44,7 +44,7 @@ def extractYt(yturl):
 #         'noplaylist': True,
 #         'progress_hooks': [custom_progress],
 #     }
-#     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+#     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
 #         ydl.download([url])
 
 
